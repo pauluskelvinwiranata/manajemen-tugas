@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Aplikasi Manajemen Tugas</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Aplikasi Manajemen Tugas</h1>
+      <form action="">
+        <label for="task">Nama Tugas</label>
+        <input type="text" id="task" placeholder="Nama Tugas" />
+        <label for="deadline">Deadline</label>
+        <input type="date" id="deadline" />
+        <label for="priority">Prioritas</label>
+        <select id="priority">
+          <option value="Tinggi">Tinggi</option>
+          <option value="Sedang">Sedang</option>
+          <option value="Rendah">Rendah</option>
+        </select>
+        <button id="addBtn">Tambah Tugas</button>
+      </form>
+      <div class="task-list" id="taskList"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
